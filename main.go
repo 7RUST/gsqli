@@ -165,7 +165,7 @@ func changeparams(s string, value string) string {
 }
 
 func heuristic(s string) bool {
-	resp, err := httpClient.Get(changeparams(s, "'"))
+	resp, err := httpClient.Get(changeparams(s, "'\""))
 	if err != nil {
 		return false
 	}
